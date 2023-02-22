@@ -77,8 +77,14 @@ a:hover{
   background-image: url("images/kick.png");
 }
 
+.violao{
+  background-image: url("/images/violao1.png");
+  background-size: cover;
+}
+
 .set {
   margin: 10% auto;
+  text-align: center;
 }
 
 .game-over {
@@ -114,11 +120,12 @@ a:hover{
 }
 
 .meu_container{
-margin: 0 auto 0 ;
+margin: 0 auto 0!important;
+width: 95%!important;
 }
 
 .row{
-margin: auto;
+  justify-content: center;
 }
 .container-fluid,
 .container {
@@ -133,19 +140,20 @@ margin: auto;
 
 
 .profile-card-2 {
-    width: 300px;
     background-color: #FFF;
     box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
-    background-position: center;
     overflow: hidden;
     position: relative;
-    margin: 10px auto;
     cursor: pointer;
     border-radius: 10px;
     height: 500px;
+    margin-top: 30px;
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+    filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
 }
 
-.profile-card-2 img {
+.profile-card-2 {
     transition: all linear 0.25s;
 }
 
@@ -158,14 +166,25 @@ margin: auto;
     text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
     font-weight: bold;
     transition: all linear 0.25s;
+    opacity: 0;
 }
-
+.profile-card-2:hover .profile-name {
+  transition: all linear 0.3s;
+  opacity: 1;
+}
 .profile-card-2 .profile-icons {
     position: absolute;
     bottom: 30px;
     right: 30px;
     color: #FFF;
     transition: all linear 0.25s;
+}
+.profile-card-2 {
+
+}
+.profile-card-2:hover {
+  -webkit-filter: grayscale(0);
+  filter: none;
 }
 
 .profile-card-2 .profile-username {
@@ -179,10 +198,6 @@ margin: auto;
 
 .profile-card-2 .profile-icons .fa {
     margin: 5px;
-}
-
-.profile-card-2:hover img {
-    filter: grayscale(100%);
 }
 
 .profile-card-2:hover .profile-name {
