@@ -1,5 +1,5 @@
 
-for(x=0; x<document.querySelectorAll(".drum").length; x++){
+for(x=0; x<document.querySelectorAll(".drum").length+1; x++){
 
 document.querySelectorAll("button")[x].addEventListener("click", handleClick)
 
