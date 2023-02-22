@@ -179,9 +179,7 @@ width: 95%!important;
     color: #FFF;
     transition: all linear 0.25s;
 }
-.profile-card-2 {
 
-}
 .profile-card-2:hover {
   -webkit-filter: grayscale(0);
   filter: none;
