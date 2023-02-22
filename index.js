@@ -3,18 +3,25 @@ for(x=0; x<document.querySelectorAll(".drum").length; x++){
 
 document.querySelectorAll("button")[x].addEventListener("click", handleClick)
 
-function handleClick(){
 
+//Se clicar, passo pra makSound o "innerHTML"
+function handleClick(){
     var buttonInnerHTML = this.innerHTML;
     makeSound(buttonInnerHTML)
+    buttonAnimation(buttonInnerHTML);
 }
 }
 
+
+//Se apertar uma tecla, passo pra makeSound "event.key"
 document.addEventListener("keydown", function(event){
 
     makeSound(event.key)
+    buttonAnimation(event.key)
 })
 
+
+//"innerHTML" e "event.key" são letras.
 function makeSound(key){
     switch (key) {
         case "w":
@@ -49,4 +56,11 @@ function makeSound(key){
     default:
         console.log("erro");
     }
+}
+
+function buttonAnimation(currentKey){
+
+    var activeButton = document.querySelector("."+currentKey);
+    activeButton.classList.add("pressed");
+    setTimeout(function(){activeButton.classList.remove("pressed")}, 70)
 }
