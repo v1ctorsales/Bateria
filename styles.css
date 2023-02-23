@@ -82,6 +82,11 @@ a:hover{
   background-size: cover;
 }
 
+.baixo{
+  background-image: url("https://i.pinimg.com/originals/10/0e/62/100e62deca268690213bc2cdf478d081.jpg");
+  background-size: cover;
+}
+
 .set {
   margin: 10% auto;
   text-align: center;
