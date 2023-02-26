@@ -82,6 +82,11 @@ a:hover{
   background-size: cover;
 }
 
+.guitarra{
+  background-image: url("https://i0.wp.com/fratermusic.com/wp-content/uploads/2012/03/guitar-strings-frets-and-pick-ups-electric-guitar.jpg?resize=350%2C200");
+  background-size: cover;
+}
+
 .baixo{
   background-image: url("https://i.pinimg.com/originals/10/0e/62/100e62deca268690213bc2cdf478d081.jpg");
   background-size: cover;
